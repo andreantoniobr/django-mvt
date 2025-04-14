@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block titulo %}Biblioteca{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'livros/css/estilo.css' %}">
+</head>
+<body>
+    <div class="container">
+        {% block conteudo %}{% endblock %}
+    </div>
+</body>
+</html>
