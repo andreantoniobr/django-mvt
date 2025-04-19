@@ -1,10 +1,10 @@
 from django.db import models
 
-class Livro(models.Model):
+class Filme(models.Model):
     titulo = models.CharField(max_length=200)
-    autor = models.CharField(max_length=100)
-    capa = models.ImageField(upload_to='capas/')
-    publicado_em = models.DateField()
+    descricao = models.TextField()
+    ano_lancamento = models.IntegerField()
+    imagem = models.ImageField(upload_to='filmes/')
 
     def __str__(self):
         return self.titulo

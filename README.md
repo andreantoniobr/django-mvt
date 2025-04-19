@@ -8,7 +8,9 @@ Este projeto é um exemplo simples para demonstrar o uso de:
 - Upload e exibição de imagens (mídia)
 - Organização de templates, estáticos e media
 
----
+## Exemplo do Projeto
+
+![Filmes](/images/filmes.jpg)
 
 ## 🚀 Como usar
 

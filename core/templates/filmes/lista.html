@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+<section id="filmes" class="filmes image-background">
+  <div class="container">   
+    <div class="grid-container big_heading_mobile">
+      {% for filme in filmes %}
+      <a class="card">
+        <h3 class="margin_bottom">{{ filme.titulo }} - {{ filme.ano_lancamento }}</h3>
+        <div class="image"><img src="{{ filme.imagem.url }}" alt="Capa de {{ filme.titulo }}"></div>
+        <p>{{ filme.descricao }}</p>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}
